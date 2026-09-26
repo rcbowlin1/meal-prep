@@ -25,7 +25,8 @@
       "Flip, pour in the sauce, reduce heat to medium, and simmer 3–4 minutes until the salmon is cooked through.",
       "Top with sesame seeds and green onion. Serve with rice, edamame, spinach, cucumber, and avocado. Makes 3–4 servings."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Seafood"
   },
   {
     "id": "braised-coconut-spinach-chickpeas",
@@ -60,7 +61,8 @@
       "Taste and adjust the salt and lemon juice.",
       "Serve over roasted sweet potatoes, topped with cilantro and toasted coconut. About 30 minutes total."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Veggie"
   },
   {
     "id": "greek-baked-orzo",
@@ -97,7 +99,8 @@
       "Transfer to the oven and bake 10–15 minutes until the orzo is tender.",
       "Stir in the butter, then top with feta, dill, lemon juice, and black pepper. About 50 minutes total."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "perfect-blueberry-muffins",
@@ -128,7 +131,8 @@
       "Bake 25–30 minutes until golden and a tester comes out clean.",
       "Cool in the pan 10 minutes, then move to a rack. (Tip: split and broil leftovers with butter the next day.)"
     ],
-    "meal": "dessert"
+    "meal": "dessert",
+    "category": "Sweets"
   },
   {
     "id": "healthy-chicken-pot-pie",
@@ -164,7 +168,8 @@
       "Bake until the crust is deeply golden and the filling bubbles at the edges, about 25 minutes.",
       "Rest a few minutes before serving. About an hour total."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "salsa-verde-chicken-tortilla-soup",
@@ -203,7 +208,8 @@
       "Serve topped with yogurt, cheese, avocado, cilantro, green onions, tortilla chips, and a little lime zest.",
       "Slow-cooker option: combine everything except the rice, cook on low 6–7 hours or high 4–5 hours, then stir in the rice and add toppings."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "asian-style-meatballs",
@@ -215,7 +221,8 @@
     "ingredients": [],
     "steps": [],
     "note": "The source link is dead (404) and the original couldn't be confirmed among BroccYourBody's several meatball recipes, so ingredients and steps aren't recorded yet.",
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "zucchini-beef-meatballs",
@@ -246,7 +253,8 @@
       "Add tomato sauce to the pan and let the meatballs finish cooking in the sauce, 20–30 minutes.",
       "Serve over pasta. (Alternatively, air-fry at 400°F for 15–20 minutes, or bake at 375°F for 25–30 minutes.)"
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Beef & Pork"
   },
   {
     "id": "pasta-bolognese",
@@ -281,7 +289,8 @@
       "Bring to a boil, then reduce heat and simmer uncovered 30–60 minutes, stirring occasionally, until thick.",
       "Remove the bay leaf and toss with cooked pasta rather than spooning the sauce on top."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Beef & Pork"
   },
   {
     "id": "baked-chicken-parmesan",
@@ -308,7 +317,8 @@
       "Top each piece with about a tablespoon of marinara and a tablespoon and a half of mozzarella.",
       "Bake 5 more minutes until the cheese melts and bubbles, then garnish with basil or parsley. About 40 minutes total."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "broccoli-cheddar-turkey-skillet",
@@ -340,7 +350,8 @@
       "Stir in half the cheddar and the sour cream or yogurt, adjusting seasoning to taste.",
       "Top with the rest of the cheese, cover briefly to melt, and garnish with parsley. About 25 minutes total."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "thai-red-curry-noodle-soup",
@@ -377,7 +388,8 @@
       "Add the rice noodles, fish sauce, and brown sugar; cook until the noodles are tender, about 5 minutes.",
       "Off the heat, stir in the green onions, cilantro, basil, and lime juice, then serve right away."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "halibut-mango-salsa-coconut-rice",
@@ -411,7 +423,8 @@
       "Serve the halibut over the coconut rice, topped with the mango salsa."
     ],
     "note": "From an Instagram story — a loose post with no exact quantities for the halibut or seasonings.",
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Seafood"
   },
   {
     "id": "hot-and-sour-soup",
@@ -443,7 +456,8 @@
       "Stir in the tofu, half the green onions, and the sesame oil, then season with salt and white or black pepper.",
       "Adjust with more vinegar for tang or more chili garlic sauce for heat, and serve garnished with the remaining green onions."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Veggie"
   },
   {
     "id": "dump-and-bake-cheesy-beef-tortellini",
@@ -467,7 +481,8 @@
       "For a bubblier top, add the cheese after about 30 minutes instead and finish uncovered 5–10 minutes until bubbly.",
       "Let it rest 5 minutes before serving; it firms up as it sits."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Beef & Pork"
   },
   {
     "id": "one-pan-chicken-enchilada-skillet",
@@ -504,7 +519,8 @@
       "Add the rest of the cilantro and cheese, cover, and cook 1 more minute until melted.",
       "Top with sliced avocado and red chili flakes before serving. Serves 4."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "greek-style-chicken-meatballs",
@@ -531,7 +547,8 @@
       "Shape into meatballs and bake 25 minutes.",
       "Serve with rice, tomato, cucumber, olives, feta, and tzatziki or hummus. Freezer- and fridge-friendly for meal prep."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "mediterranean-sheet-pan-chicken-feta",
@@ -556,7 +573,8 @@
       "Whisk the olive oil, lemon juice, and oregano together and drizzle it over everything so it's fully coated.",
       "Bake 35 minutes."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "sheet-pan-sausage-and-veggies",
@@ -589,7 +607,8 @@
       "Roast 15 minutes, then stir and flip everything and roast another 10–15 minutes until the vegetables are as tender as you like.",
       "Finish with grated Parmesan and fresh parsley; serve as-is or over rice or quinoa."
     ],
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Beef & Pork"
   },
   {
     "id": "burger-bowls",
@@ -613,7 +632,8 @@
       "Assemble everything over lettuce with tomatoes, pickles, and cheese."
     ],
     "note": "Your own bowl idea, not a captured recipe — this is a suggested approach.",
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Beef & Pork"
   },
   {
     "id": "greek-bowls",
@@ -634,7 +654,8 @@
       "Build the bowl with tomatoes, cucumber, lettuce, and feta."
     ],
     "note": "Your own bowl idea, not a captured recipe — this is a suggested approach.",
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Chicken"
   },
   {
     "id": "salmon-bowls",
@@ -656,6 +677,7 @@
       "Serve over rice with soy sauce."
     ],
     "note": "Your own bowl idea, not a captured recipe — this is a suggested approach.",
-    "meal": "dinner"
+    "meal": "dinner",
+    "category": "Seafood"
   }
 ]

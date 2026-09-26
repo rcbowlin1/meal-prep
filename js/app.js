@@ -72,16 +72,14 @@ function render() {
 // ---- Recipes view ----
 function renderRecipes() {
   const visible = recipes.filter((r) => r.status !== "archived");
-  const counts = {
-    all: visible.length,
-    dinner: visible.filter((r) => (r.meal || "dinner") === "dinner").length,
-    dessert: visible.filter((r) => r.meal === "dessert").length,
-  };
-  const chips = [["all", "All"], ["dinner", "Dinner"], ["dessert", "Dessert"]]
-    .map(([key, label]) => `<button class="chip ${recipeFilter === key ? "active" : ""}" data-filter="${key}">${label} <span class="chip-count">${counts[key]}</span></button>`)
+  const CATEGORY_ORDER = ["Chicken", "Beef & Pork", "Seafood", "Veggie", "Sweets"];
+  const count = (key) => key === "all" ? visible.length : visible.filter((r) => r.category === key).length;
+  const chipDefs = [["all", "All"], ...CATEGORY_ORDER.filter((c) => count(c) > 0).map((c) => [c, c])];
+  const chips = chipDefs
+    .map(([key, label]) => `<button class="chip ${recipeFilter === key ? "active" : ""}" data-filter="${esc(key)}">${esc(label)} <span class="chip-count">${count(key)}</span></button>`)
     .join("");
 
-  const filtered = visible.filter((r) => recipeFilter === "all" || (r.meal || "dinner") === recipeFilter);
+  const filtered = visible.filter((r) => recipeFilter === "all" || r.category === recipeFilter);
   const cards = filtered
     .map((r) => {
       const inWeek = state.week.includes(r.id);

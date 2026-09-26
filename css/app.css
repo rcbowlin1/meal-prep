@@ -1,13 +1,17 @@
-/* Bowlin's Shopping List — cream + carrot design system */
+/* Grocery Run — cream design system. Primary = broccoli green, accent = carrot orange
+   (the --carrot / --broccoli token VALUES were swapped; names kept to avoid churn). */
 
 :root {
   --cream: #F5EFE1;
   --card: #FFFDF7;
   --ink: #33302A;
   --muted: #8f8a7b;
-  --carrot: #E0741F;
-  --carrot-dark: #c1631a;
-  --broccoli: #4F8F43;
+  /* Swapped per request: --carrot now holds broccoli green (primary/brand),
+     --broccoli now holds carrot orange (selected/Add-to-week/Produce). The token
+     names are kept so the ~30 usages don't change; only the values swapped. */
+  --carrot: #4F8F43;
+  --carrot-dark: #3f7335;
+  --broccoli: #E0741F;
   --strawberry: #D8473F;
   --blueberry: #3E6CC4;
   --blueberry-dark: #335aa3;
@@ -531,10 +535,20 @@ body {
 .toast[hidden] { display: none; }
 @keyframes toast-in { from { opacity: 0; transform: translate(-50%, 8px); } to { opacity: 1; transform: translate(-50%, 0); } }
 
+@media (max-width: 520px) {
+  .recipe-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .recipe-card { padding: 12px; gap: 8px; border-radius: 13px; min-width: 0; }
+  .recipe-card h3 { overflow-wrap: anywhere; }
+  .recipe-meta { overflow-wrap: anywhere; }
+  .recipe-card h3 { font-size: 0.9rem; line-height: 1.25; }
+  .recipe-meta { font-size: 0.72rem; gap: 4px; }
+  .toggle-week { padding: 7px 8px; font-size: 0.78rem; }
+  .filter-chips { gap: 6px; }
+  .chip { font-size: 0.82rem; padding: 6px 11px; }
+}
 @media (max-width: 420px) {
   .app-header { padding-top: 20px; }
   .app-header h1 { font-size: 1.6rem; }
-  .recipe-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
