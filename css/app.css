@@ -45,9 +45,9 @@ body {
   color: var(--veg);
 }
 .veg { position: absolute; opacity: 0.5; }
-.veg-carrot { top: 13%; right: -24px; width: 150px; height: 225px; transform: rotate(10deg); }
+.veg-carrot { top: 22%; right: -24px; width: 150px; height: 225px; transform: rotate(10deg); }
 .veg-broc { bottom: 6px; left: -42px; width: 270px; height: 290px; transform: rotate(-6deg); }
-.veg-straw { top: 40%; left: 36%; width: 230px; height: 195px; transform: rotate(-4deg); opacity: 0.36; }
+.veg-straw { top: 34%; left: 4%; width: 230px; height: 195px; transform: rotate(-4deg); opacity: 0.36; }
 
 /* everything above the veg layer */
 .app-header, .tabs, #view, .toast { position: relative; z-index: 1; }
