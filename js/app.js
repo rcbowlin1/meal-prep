@@ -104,7 +104,10 @@ function renderRecipes() {
   const grid = filtered.length
     ? `<div class="recipe-grid">${cards}</div>`
     : `<div class="empty">No ${recipeFilter} recipes yet.</div>`;
-  return `<div class="view-head"><h2>Recipes</h2><span class="count">${filtered.length} shown</span></div>
+  const hasState = state.week.length || state.list.length;
+  const startOver = hasState ? `<button class="btn btn-danger btn-sm" id="start-over">Start over</button>` : "";
+  return `<div class="view-head"><h2>Recipes</h2>
+      <span class="head-right"><span class="count">${filtered.length} shown</span>${startOver}</span></div>
     <div class="filter-chips">${chips}</div>
     ${grid}`;
 }
@@ -260,6 +263,18 @@ function clearWeek() {
   save(KEYS.week, state.week);
   render();
 }
+function startOver() {
+  if (!confirm("Start over? This clears your week picks and grocery list. (Your recipes stay.)")) return;
+  state.week = [];
+  state.list = [];
+  state.overrides = {};
+  save(KEYS.week, state.week);
+  save(KEYS.list, state.list);
+  save(KEYS.overrides, state.overrides);
+  recipeFilter = "all";
+  render();
+  toast("Cleared — starting fresh");
+}
 
 // ---- copy to clipboard ----
 function listText() {
@@ -339,6 +354,8 @@ function wire() {
     if (t.closest("#clear-checked")) { clearChecked(); return; }
     if (t.closest("#clear-all")) { clearAll(); return; }
     if (t.closest("#modal-close")) { byId("recipe-modal").close(); return; }
+
+    if (t.closest("#start-over")) { startOver(); return; }
 
     const filter = t.closest("[data-filter]");
     if (filter) { recipeFilter = filter.dataset.filter; render(); return; }

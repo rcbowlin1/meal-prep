@@ -44,8 +44,8 @@ body {
   color: var(--veg);
 }
 .veg { position: absolute; opacity: 0.5; }
-.veg-carrot { top: 5%; right: -24px; width: 150px; height: 225px; transform: rotate(10deg); }
-.veg-broc { bottom: -28px; left: -42px; width: 270px; height: 290px; transform: rotate(-6deg); }
+.veg-carrot { top: 13%; right: -24px; width: 150px; height: 225px; transform: rotate(10deg); }
+.veg-broc { bottom: 6px; left: -42px; width: 270px; height: 290px; transform: rotate(-6deg); }
 .veg-straw { top: 40%; left: 36%; width: 230px; height: 195px; transform: rotate(-4deg); opacity: 0.36; }
 
 /* everything above the veg layer */
@@ -137,6 +137,7 @@ body {
 }
 .view-head h2 { margin: 0; font-size: 1.25rem; }
 .view-head .count { color: var(--muted); font-size: 0.9rem; }
+.view-head .head-right { display: inline-flex; align-items: center; gap: 12px; }
 
 /* ---- buttons ---- */
 .btn {
