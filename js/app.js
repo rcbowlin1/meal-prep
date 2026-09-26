@@ -105,7 +105,7 @@ function renderRecipes() {
     ? `<div class="recipe-grid">${cards}</div>`
     : `<div class="empty">No ${recipeFilter} recipes yet.</div>`;
   const hasState = state.week.length || state.list.length;
-  const startOver = hasState ? `<button class="btn btn-danger btn-sm" id="start-over">Start over</button>` : "";
+  const startOver = hasState ? `<button class="btn btn-strawberry btn-sm" id="start-over">Start over</button>` : "";
   return `<div class="view-head"><h2>Recipes</h2>
       <span class="head-right"><span class="count">${filtered.length} shown</span>${startOver}</span></div>
     <div class="filter-chips">${chips}</div>
