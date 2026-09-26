@@ -1,4 +1,4 @@
-# Meal Prep — Bowlin's Shopping List
+# Grocery Run
 
 A small, static meal-planning web app. Browse recipes, pick a few for the week, and get an
 auto-categorized shopping list (fresh items included, pantry items flagged for confirmation).

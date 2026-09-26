@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Bowlin's Shopping List</title>
+  <title>Grocery Run</title>
   <meta name="description" content="Plan dinners, get a grocery list." />
   <meta name="theme-color" content="#F5EFE1" />
   <link rel="icon" href="icon.svg" type="image/svg+xml" />
@@ -12,13 +12,38 @@
 </head>
 <body>
   <div class="veg-bg" aria-hidden="true">
-    <svg class="veg veg-carrot" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M35 45 L60 78 L70 62 Z"/><path d="M60 42 L70 30 M66 46 L80 40 M55 38 L58 24"/></g></svg>
-    <svg class="veg veg-broc" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="40" cy="38" r="12"/><circle cx="58" cy="34" r="11"/><circle cx="50" cy="52" r="12"/><path d="M50 60 L50 82"/></g></svg>
-    <svg class="veg veg-tom" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="50" cy="55" r="26"/><path d="M50 29 L50 20 M42 27 L36 21 M58 27 L64 21"/></g></svg>
+    <svg class="veg veg-carrot" viewBox="0 0 100 150">
+      <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 54 L50 138 L70 54 Q50 46 30 54 Z"/>
+        <path d="M38 72 L46 75 M62 72 L54 75 M42 92 L49 94 M58 92 L51 94 M47 110 L53 111"/>
+        <path d="M50 52 C46 36 40 26 31 20"/>
+        <path d="M50 52 C50 34 50 24 50 13"/>
+        <path d="M50 52 C54 36 60 26 69 20"/>
+        <path d="M31 20 Q37 22 39 28 M50 13 Q46 18 47 24 M69 20 Q63 22 61 28"/>
+      </g>
+    </svg>
+    <svg class="veg veg-broc" viewBox="0 0 130 140">
+      <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 68 C22 54 30 40 45 43 C48 30 66 26 74 37 C88 30 102 41 97 55 C105 62 102 78 90 79 C88 91 69 93 61 84 C49 92 33 86 34 74 C28 74 27 71 30 68 Z"/>
+        <circle cx="47" cy="46" r="6"/><circle cx="66" cy="39" r="7"/><circle cx="85" cy="49" r="6"/>
+        <path d="M57 82 C55 98 54 110 53 122 M77 82 C79 98 80 110 81 122"/>
+        <path d="M57 96 C65 101 73 101 79 96"/>
+      </g>
+    </svg>
+    <svg class="veg veg-straw" viewBox="0 0 130 110">
+      <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M24 42 C12 45 11 58 20 69 C28 80 38 90 44 96 C50 90 60 80 68 69 C77 58 76 45 64 42 C52 34 36 34 24 42 Z"/>
+        <path d="M44 42 L44 31 M44 37 L34 32 M44 37 L54 32 M44 39 L37 36 M44 39 L51 36"/>
+        <path d="M30 56 l2 3 M44 53 l2 3 M57 58 l2 3 M36 71 l2 3 M51 71 l2 3 M44 84 l2 3"/>
+        <path d="M84 54 C76 56 75 65 82 73 C87 81 94 88 98 92 C102 88 108 81 113 73 C120 65 119 56 111 54 C103 48 92 48 84 54 Z"/>
+        <path d="M98 54 L98 46 M98 50 L91 46 M98 50 L105 46"/>
+        <path d="M89 64 l1.5 2 M106 64 l1.5 2 M98 76 l1.5 2"/>
+      </g>
+    </svg>
   </div>
 
   <header class="app-header">
-    <h1>Bowlin's Shopping List</h1>
+    <h1>Grocery Run</h1>
     <p class="tagline">Plan dinners, get a grocery list.</p>
   </header>
 
@@ -36,6 +61,25 @@
   </dialog>
 
   <div id="toast" class="toast" role="status" hidden></div>
+
+  <!-- Recipe assistant: deterministic search over the recipe data (no LLM/API). -->
+  <button id="assistant-toggle" class="assistant-toggle" aria-label="Ask about the recipes" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 11.5a8 8 0 0 1-11.5 7.2L4 20l1.3-4.2A8 8 0 1 1 21 11.5Z"/>
+    </svg>
+  </button>
+  <section id="assistant" class="assistant" hidden aria-label="Recipe assistant">
+    <header class="assistant-head">
+      <span class="assistant-title">Ask the kitchen</span>
+      <button id="assistant-close" class="assistant-close" aria-label="Close">&times;</button>
+    </header>
+    <div id="assistant-log" class="assistant-log"></div>
+    <div id="assistant-chips" class="assistant-chips"></div>
+    <form id="assistant-form" class="assistant-form" autocomplete="off">
+      <input id="assistant-input" type="text" placeholder="e.g. recipes with chicken" aria-label="Ask about the recipes" />
+      <button type="submit" class="btn btn-primary btn-sm">Ask</button>
+    </form>
+  </section>
 
   <script type="module" src="js/app.js"></script>
 </body>

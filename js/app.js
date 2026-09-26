@@ -3,6 +3,7 @@
 import { parseIngredient, normalizeName } from "./parse.js";
 import { classify } from "./categorize.js";
 import { buildShoppingList } from "./list.js";
+import { initAssistant } from "./assistant.js";
 
 const KEYS = { week: "mp.week", list: "mp.list", overrides: "mp.overrides" };
 
@@ -17,6 +18,7 @@ const CAT_DOT = {
 const CAT_NOTE = { "Pantry": "check your shelf first", "Other": "double-check these" };
 
 let recipes = [];
+let recipeFilter = "all"; // all | dinner | dessert
 const state = {
   week: load(KEYS.week, []),
   list: load(KEYS.list, []),
@@ -69,8 +71,18 @@ function render() {
 
 // ---- Recipes view ----
 function renderRecipes() {
-  const cards = recipes
-    .filter((r) => r.status !== "archived")
+  const visible = recipes.filter((r) => r.status !== "archived");
+  const counts = {
+    all: visible.length,
+    dinner: visible.filter((r) => (r.meal || "dinner") === "dinner").length,
+    dessert: visible.filter((r) => r.meal === "dessert").length,
+  };
+  const chips = [["all", "All"], ["dinner", "Dinner"], ["dessert", "Dessert"]]
+    .map(([key, label]) => `<button class="chip ${recipeFilter === key ? "active" : ""}" data-filter="${key}">${label} <span class="chip-count">${counts[key]}</span></button>`)
+    .join("");
+
+  const filtered = visible.filter((r) => recipeFilter === "all" || (r.meal || "dinner") === recipeFilter);
+  const cards = filtered
     .map((r) => {
       const inWeek = state.week.includes(r.id);
       const d = domain(r.url);
@@ -89,8 +101,12 @@ function renderRecipes() {
       </article>`;
     })
     .join("");
-  return `<div class="view-head"><h2>Recipes</h2><span class="count">${recipes.length} recipes</span></div>
-    <div class="recipe-grid">${cards}</div>`;
+  const grid = filtered.length
+    ? `<div class="recipe-grid">${cards}</div>`
+    : `<div class="empty">No ${recipeFilter} recipes yet.</div>`;
+  return `<div class="view-head"><h2>Recipes</h2><span class="count">${filtered.length} shown</span></div>
+    <div class="filter-chips">${chips}</div>
+    ${grid}`;
 }
 
 // ---- This Week view ----
@@ -324,9 +340,15 @@ function wire() {
     if (t.closest("#clear-all")) { clearAll(); return; }
     if (t.closest("#modal-close")) { byId("recipe-modal").close(); return; }
 
+    const filter = t.closest("[data-filter]");
+    if (filter) { recipeFilter = filter.dataset.filter; render(); return; }
+
     const card = t.closest(".recipe-card");
     if (card) { openRecipe(card.dataset.recipe); return; }
   });
+
+  // The assistant asks us to open a recipe via a custom event.
+  window.addEventListener("open-recipe", (e) => openRecipe(e.detail.id));
 
   document.addEventListener("change", (e) => {
     const chk = e.target.closest("[data-check]");
@@ -380,6 +402,8 @@ async function boot() {
   state.week = state.week.filter((id) => ids.has(id));
   save(KEYS.week, state.week);
   render();
+
+  initAssistant(recipes);
 
   // Shareable deep link: index.html?r=<recipe-id> opens that recipe on load.
   const rid = new URLSearchParams(location.search).get("r");

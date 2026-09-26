@@ -1,6 +1,6 @@
 {
-  "name": "Bowlin's Shopping List",
-  "short_name": "Shopping List",
+  "name": "Grocery Run",
+  "short_name": "Grocery Run",
   "description": "Plan dinners, get a grocery list.",
   "start_url": ".",
   "scope": ".",
