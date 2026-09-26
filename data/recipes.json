@@ -1,24 +1,639 @@
 [
-  { "id": "crispy-honey-salmon-bites", "title": "Crispy honey salmon bites", "url": "https://broccyourbody.com/2022/06/02/crispy-honey-salmon/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["1 lb salmon, skin removed", "2 tbsp tapioca flour (optional)", "1 tbsp sesame oil", "1/4 cup honey", "2 tbsp soy sauce", "1 tbsp chili sauce or sriracha", "1 tsp rice vinegar", "1 clove garlic, minced", "sesame seeds, to top", "green onions, to top"] },
-  { "id": "braised-coconut-spinach-chickpeas", "title": "Braised coconut spinach and chickpeas with lemon", "url": "https://www.thekitchn.com/recipe-braised-coconut-spinach-chickpeas-with-lemon-recipes-from-the-kitchn-164551", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["2 tsp oil or ghee", "1 small yellow onion", "1/2 cup sun-dried tomatoes, chopped", "4 large cloves garlic, minced", "1 tbsp fresh ginger, grated", "1 large lemon", "1 pinch red pepper flakes (optional)", "1 can (15 oz) chickpeas, drained and rinsed", "1 lb baby spinach", "1 can (13 oz) coconut milk", "1 tsp ground ginger", "1 tsp salt", "sweet potatoes, for serving", "fresh cilantro leaves, for serving", "toasted unsweetened coconut, for serving"] },
-  { "id": "greek-baked-orzo", "title": "Greek baked orzo", "url": "https://pinchofyum.com/greek-baked-orzo", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["2 tbsp olive oil", "1/2 onion, diced", "2 garlic cloves, minced", "1 red bell pepper, diced", "2 cups kale, chopped", "2 tsp dried oregano", "1 pinch red pepper flakes", "1 tsp kosher salt", "3 tbsp tomato paste", "1 cup orzo", "1 can (14 oz) diced fire-roasted tomatoes", "1 to 2 cups cooked chicken or chickpeas", "2 1/2 cups vegetable or chicken broth", "1 tbsp butter", "1/2 cup feta, for topping", "3 tbsp fresh dill, for topping", "1 lemon, for serving"] },
-  { "id": "perfect-blueberry-muffins", "title": "Perfect blueberry muffins", "url": "https://smittenkitchen.com/2010/08/perfect-blueberry-muffins/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["5 tbsp unsalted butter", "1/2 cup sugar", "1/2 lemon", "3/4 cup plain unsweetened yogurt or sour cream", "1 large egg", "1 1/2 tsp baking powder", "1/4 tsp baking soda", "1/4 tsp salt", "1 1/2 cups all-purpose flour", "1 1/2 cups blueberries, fresh or frozen", "3 tbsp turbinado sugar"] },
-  { "id": "healthy-chicken-pot-pie", "title": "Healthy chicken pot pie", "url": "https://www.wellplated.com/healthy-chicken-pot-pie/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["1 tbsp extra-virgin olive oil", "10 oz cremini mushrooms", "3 medium carrots, diced", "1 stalk celery", "1 1/2 tsp garlic powder", "1/2 tsp kosher salt", "1/4 tsp ground black pepper", "1/4 cup all-purpose flour", "2 cups unsweetened almond milk", "8 oz boneless skinless chicken breast", "1/2 cup frozen peas", "1/2 cup frozen pearl onions", "1 tbsp fresh thyme, chopped", "1 prepared pie crust", "1 egg"] },
-  { "id": "salsa-verde-chicken-tortilla-soup", "title": "Salsa verde chicken and rice tortilla soup", "url": "https://www.halfbakedharvest.com/salsa-verde-chicken-rice-tortilla-soup/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["2 tbsp extra virgin olive oil", "1 yellow onion, chopped", "1 lb boneless skinless chicken thighs or breasts", "2 tsp chili powder", "2 tsp smoked paprika", "1 tsp dried oregano", "kosher salt and black pepper", "1-2 poblano peppers, chopped", "2 cups salsa verde", "6 cups low sodium chicken broth", "1 can (14 oz) black beans, drained", "2 tbsp lime juice", "1/2 cup cilantro, chopped", "3 cups cooked rice", "tortilla chips, for serving", "yogurt, for serving", "avocado, for serving", "cheese, for serving", "green onions, for serving"] },
-  { "id": "asian-style-meatballs", "title": "Asian-style meatballs", "url": "https://broccyourbody.com/2021/01/20/asian-style-meatballs/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": [] },
-  { "id": "zucchini-beef-meatballs", "title": "Zucchini beef meatballs", "url": "https://www.besosalina.com/zucchini-meatballs-recipe-easy-weeknight-pasta-meatballs/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["1 lb ground beef", "1 medium zucchini, grated", "1 egg", "2 garlic cloves, minced", "1 yellow onion, diced", "1/3 cup Italian breadcrumbs", "1 tsp dried parsley", "1 tsp dried oregano", "1 tsp dried basil", "1/3 cup grated parmesan cheese", "1 tbsp olive oil", "tomato sauce, for simmering", "pasta, for serving"] },
-  { "id": "pasta-bolognese", "title": "Pasta Bolognese", "url": "https://feelgoodfoodie.net/recipe/pasta-bolognese/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["1 tbsp olive oil", "1 onion, diced", "3 stalks celery, small diced", "2 carrots, peeled and small diced", "2 garlic cloves, minced", "1 lb lean ground beef", "1 tsp salt", "1/2 tsp black pepper", "1 cup whole milk", "1 can (28 oz) crushed tomatoes", "2 tbsp tomato paste", "1 bay leaf", "2 tsp oregano", "1/4 tsp nutmeg", "16 oz tagliatelle pasta", "chopped parsley, for serving"] },
-  { "id": "baked-chicken-parmesan", "title": "Baked chicken Parmesan", "url": "https://www.skinnytaste.com/baked-chicken-parmesan/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["4 boneless skinless chicken breasts, sliced in half lengthwise", "3/4 cup seasoned breadcrumbs", "1/4 cup grated parmesan cheese", "2 tbsp butter, melted", "3/4 cup part-skim mozzarella cheese", "1 cup marinara sauce", "cooking spray", "basil, for garnish"] },
-  { "id": "broccoli-cheddar-turkey-skillet", "title": "Broccoli cheddar turkey skillet", "url": "https://broccyourbody.com/broccoli-cheddar-turkey-skillet/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["1 tbsp olive oil", "1 small yellow onion, diced", "2 garlic cloves, minced", "1 lb ground turkey, preferably 93% lean", "1 tsp kosher salt", "1 tsp paprika", "1/4 tsp red chili flakes", "1/4 tsp black pepper", "1 1/2 cups frozen precooked brown rice", "3 cups broccoli florets", "1/2 cup chicken broth or water", "1 cup shredded cheddar cheese", "1/3 cup sour cream or Greek yogurt", "chopped parsley, to top"] },
-  { "id": "thai-red-curry-noodle-soup", "title": "Thai red curry noodle soup", "url": "https://damndelicious.net/2018/04/18/thai-red-curry-noodle-soup/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["1 tbsp olive oil", "1 1/2 lb boneless skinless chicken breasts, cut into 1/2-inch chunks", "kosher salt and black pepper", "3 cloves garlic, minced", "1 red bell pepper, diced", "1 onion, diced", "3 tbsp red curry paste", "1 tbsp fresh ginger, grated", "6 cups low sodium chicken broth", "1 can (13.5 oz) coconut milk", "4 oz rice noodles", "1 tbsp fish sauce", "2 tsp brown sugar", "3 green onions, thinly sliced", "1/2 cup fresh cilantro leaves, chopped", "1/4 cup fresh basil leaves, chopped", "2 tbsp lime juice"] },
-  { "id": "halibut-mango-salsa-coconut-rice", "title": "Halibut with mango salsa and coconut rice", "url": "", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["halibut fillets", "avocado oil", "paprika", "garlic powder", "mango", "kiwi", "onion", "cilantro", "red pepper", "garlic cloves, chopped", "1 lime", "olive oil", "salt", "pepper", "white rice", "1-2 cups coconut milk"] },
-  { "id": "hot-and-sour-soup", "title": "Hot and sour soup", "url": "", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["8 cups chicken broth or vegetable broth", "8 oz shiitake mushrooms, thinly sliced", "1 can (8 oz) bamboo shoots", "1/4 cup rice vinegar", "1/4 cup low-sodium soy sauce", "2 tsp ground ginger", "1 tsp chili garlic sauce", "1/4 cup cornstarch", "2 large eggs", "8 oz firm tofu, cut into 1/2-inch cubes", "4 green onions, thinly sliced", "1 tsp toasted sesame oil", "kosher salt and white pepper"] },
-  { "id": "dump-and-bake-cheesy-beef-tortellini", "title": "Dump-and-bake cheesy beef tortellini", "url": "", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["1 package (20 oz) tortellini", "1 lb ground beef, cooked and seasoned", "1 jar (24 oz) marinara sauce", "1 zucchini, chopped", "1 to 1 1/2 cups shredded sharp cheddar cheese"] },
-  { "id": "one-pan-chicken-enchilada-skillet", "title": "One-pan chicken enchilada skillet", "url": "", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["2 tbsp avocado oil", "1/2 cup red onion, diced", "1 tsp garlic, minced", "1 lb organic ground chicken or turkey", "2 cups zucchini, chopped", "1 large red bell pepper, diced", "1 jar (15 oz) enchilada sauce", "1/4 tsp ground cumin", "1/4 tsp chili powder", "1/4 tsp paprika", "sea salt and black pepper", "1/2 cup fresh cilantro leaves, chopped", "1/2 cup shredded hard goat cheese", "4 tortillas (6-inch), cut into strips", "1/4 cup scallions, chopped", "1 avocado, sliced", "1 tsp red chili flakes"] },
-  { "id": "greek-style-chicken-meatballs", "title": "Greek-style chicken meatballs", "url": "", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["1 lb ground chicken", "1 egg", "1/4 cup almond flour", "1/4 cup feta", "1 tbsp garlic powder", "1 tbsp oregano", "1 tbsp dried mint", "1 tbsp fresh dill, chopped", "2 tbsp fresh parsley, chopped", "salt and pepper"] },
-  { "id": "mediterranean-sheet-pan-chicken-feta", "title": "Mediterranean sheet pan chicken and feta", "url": "", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["1 cup pitted olives", "1 can artichoke hearts", "2 zucchini, chopped", "3 chicken breasts", "1 block feta, cubed", "3/4 cup olive oil", "juice of 1 lemon", "1 tbsp oregano"] },
-  { "id": "sheet-pan-sausage-and-veggies", "title": "Sheet pan sausage and veggies", "url": "https://www.chelseasmessyapron.com/one-pan-healthy-sausage-and-veggies/", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["2 cups diced baby red potatoes", "3 cups green beans, trimmed and halved", "1 head broccoli", "1 1/2 cups bell peppers, chopped", "13 oz smoked sausage", "6 tbsp olive oil", "1/4 tsp red pepper flakes", "1 tsp paprika", "1/2 tsp garlic powder", "1 tbsp dried oregano", "1 tbsp dried parsley", "salt and pepper", "grated Parmesan cheese, for serving", "cooked quinoa or rice, for serving"] },
-  { "id": "burger-bowls", "title": "Burger bowls", "url": "", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["ground beef", "mushrooms", "potatoes or sweet potatoes", "tomatoes", "lettuce", "pickles", "cheese"] },
-  { "id": "greek-bowls", "title": "Greek bowls", "url": "", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["chicken meatballs", "tomatoes", "cucumber", "lettuce", "feta"] },
-  { "id": "salmon-bowls", "title": "Salmon bowls", "url": "", "status": "active", "pass_count": 0, "keep_count": 0, "ingredients": ["salmon", "rice", "broccoli", "carrots", "soy sauce"] }
+  {
+    "id": "crispy-honey-salmon-bites",
+    "title": "Crispy honey salmon bites",
+    "url": "https://broccyourbody.com/2022/06/02/crispy-honey-salmon/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 lb salmon, skin removed",
+      "2 tbsp tapioca flour (optional)",
+      "1 tbsp sesame oil",
+      "1/4 cup honey",
+      "2 tbsp soy sauce",
+      "1 tbsp chili sauce or sriracha",
+      "1 tsp rice vinegar",
+      "1 clove garlic, minced",
+      "sesame seeds, to top",
+      "green onions, to top"
+    ],
+    "steps": [
+      "Whisk the honey, soy sauce, chili sauce, vinegar, and garlic together to make the sauce; set aside.",
+      "Cut the salmon into bite-size pieces and toss in tapioca flour, if using.",
+      "Heat sesame oil in a skillet over medium-high and sear the salmon about 2 minutes, until golden and crisp.",
+      "Flip, pour in the sauce, reduce heat to medium, and simmer 3–4 minutes until the salmon is cooked through.",
+      "Top with sesame seeds and green onion. Serve with rice, edamame, spinach, cucumber, and avocado. Makes 3–4 servings."
+    ]
+  },
+  {
+    "id": "braised-coconut-spinach-chickpeas",
+    "title": "Braised coconut spinach and chickpeas with lemon",
+    "url": "https://www.thekitchn.com/recipe-braised-coconut-spinach-chickpeas-with-lemon-recipes-from-the-kitchn-164551",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "2 tsp oil or ghee",
+      "1 small yellow onion",
+      "1/2 cup sun-dried tomatoes, chopped",
+      "4 large cloves garlic, minced",
+      "1 tbsp fresh ginger, grated",
+      "1 large lemon",
+      "1 pinch red pepper flakes (optional)",
+      "1 can (15 oz) chickpeas, drained and rinsed",
+      "1 lb baby spinach",
+      "1 can (13 oz) coconut milk",
+      "1 tsp ground ginger",
+      "1 tsp salt",
+      "sweet potatoes, for serving",
+      "fresh cilantro leaves, for serving",
+      "toasted unsweetened coconut, for serving"
+    ],
+    "steps": [
+      "Sauté the chopped onion in oil until browning, about 5 minutes.",
+      "Add the sun-dried tomatoes, garlic, fresh ginger, lemon zest, and red pepper flakes; cook another 3 minutes.",
+      "Add the chickpeas and cook over high heat until golden and coated.",
+      "Add the spinach a handful at a time, letting each batch wilt before adding more.",
+      "Pour in the coconut milk, lemon juice, ground ginger, and salt; simmer about 10 minutes until warmed through.",
+      "Taste and adjust the salt and lemon juice.",
+      "Serve over roasted sweet potatoes, topped with cilantro and toasted coconut. About 30 minutes total."
+    ]
+  },
+  {
+    "id": "greek-baked-orzo",
+    "title": "Greek baked orzo",
+    "url": "https://pinchofyum.com/greek-baked-orzo",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "2 tbsp olive oil",
+      "1/2 onion, diced",
+      "2 garlic cloves, minced",
+      "1 red bell pepper, diced",
+      "2 cups kale, chopped",
+      "2 tsp dried oregano",
+      "1 pinch red pepper flakes",
+      "1 tsp kosher salt",
+      "3 tbsp tomato paste",
+      "1 cup orzo",
+      "1 can (14 oz) diced fire-roasted tomatoes",
+      "1 to 2 cups cooked chicken or chickpeas",
+      "2 1/2 cups vegetable or chicken broth",
+      "1 tbsp butter",
+      "1/2 cup feta, for topping",
+      "3 tbsp fresh dill, for topping",
+      "1 lemon, for serving"
+    ],
+    "steps": [
+      "Preheat the oven to 400°F.",
+      "Sauté the onion in olive oil about 5 minutes until soft.",
+      "Add the garlic, bell pepper, kale, oregano, red pepper flakes, and salt; cook another 5 minutes until the kale wilts.",
+      "Stir in the tomato paste and cook 1–2 minutes.",
+      "Add the dry orzo, canned tomatoes, cooked chicken or chickpeas, and broth; bring to a simmer.",
+      "Transfer to the oven and bake 10–15 minutes until the orzo is tender.",
+      "Stir in the butter, then top with feta, dill, lemon juice, and black pepper. About 50 minutes total."
+    ]
+  },
+  {
+    "id": "perfect-blueberry-muffins",
+    "title": "Perfect blueberry muffins",
+    "url": "https://smittenkitchen.com/2010/08/perfect-blueberry-muffins/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "5 tbsp unsalted butter",
+      "1/2 cup sugar",
+      "1/2 lemon",
+      "3/4 cup plain unsweetened yogurt or sour cream",
+      "1 large egg",
+      "1 1/2 tsp baking powder",
+      "1/4 tsp baking soda",
+      "1/4 tsp salt",
+      "1 1/2 cups all-purpose flour",
+      "1 1/2 cups blueberries, fresh or frozen",
+      "3 tbsp turbinado sugar"
+    ],
+    "steps": [
+      "Preheat the oven to 375°F and line a muffin tin with 9 liners or grease it.",
+      "Melt the butter in a large bowl, then whisk in the sugar, lemon zest, yogurt, and egg until smooth.",
+      "Whisk in the baking powder, baking soda, and salt.",
+      "Fold in the flour and blueberries just until combined — the batter will be thick.",
+      "Divide among the muffin cups and sprinkle turbinado sugar on top.",
+      "Bake 25–30 minutes until golden and a tester comes out clean.",
+      "Cool in the pan 10 minutes, then move to a rack. (Tip: split and broil leftovers with butter the next day.)"
+    ]
+  },
+  {
+    "id": "healthy-chicken-pot-pie",
+    "title": "Healthy chicken pot pie",
+    "url": "https://www.wellplated.com/healthy-chicken-pot-pie/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 tbsp extra-virgin olive oil",
+      "10 oz cremini mushrooms",
+      "3 medium carrots, diced",
+      "1 stalk celery",
+      "1 1/2 tsp garlic powder",
+      "1/2 tsp kosher salt",
+      "1/4 tsp ground black pepper",
+      "1/4 cup all-purpose flour",
+      "2 cups unsweetened almond milk",
+      "8 oz boneless skinless chicken breast",
+      "1/2 cup frozen peas",
+      "1/2 cup frozen pearl onions",
+      "1 tbsp fresh thyme, chopped",
+      "1 prepared pie crust",
+      "1 egg"
+    ],
+    "steps": [
+      "Preheat the oven to 425°F and prep a 9-inch pie dish.",
+      "Cook the mushrooms in oil until browned, about 8 minutes.",
+      "Add the carrots, celery, garlic powder, salt, and pepper; cook 3 more minutes.",
+      "Sprinkle in the flour, cook 2 minutes, then gradually whisk in the almond milk; simmer until thickened, 3–5 minutes.",
+      "Stir in the shredded chicken, peas, pearl onions, and thyme, then pour into the pie dish.",
+      "Lay the crust on top, brush with egg wash, trim the edges, and cut a few vents.",
+      "Bake until the crust is deeply golden and the filling bubbles at the edges, about 25 minutes.",
+      "Rest a few minutes before serving. About an hour total."
+    ]
+  },
+  {
+    "id": "salsa-verde-chicken-tortilla-soup",
+    "title": "Salsa verde chicken and rice tortilla soup",
+    "url": "https://www.halfbakedharvest.com/salsa-verde-chicken-rice-tortilla-soup/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "2 tbsp extra virgin olive oil",
+      "1 yellow onion, chopped",
+      "1 lb boneless skinless chicken thighs or breasts",
+      "2 tsp chili powder",
+      "2 tsp smoked paprika",
+      "1 tsp dried oregano",
+      "kosher salt and black pepper",
+      "1-2 poblano peppers, chopped",
+      "2 cups salsa verde",
+      "6 cups low sodium chicken broth",
+      "1 can (14 oz) black beans, drained",
+      "2 tbsp lime juice",
+      "1/2 cup cilantro, chopped",
+      "3 cups cooked rice",
+      "tortilla chips, for serving",
+      "yogurt, for serving",
+      "avocado, for serving",
+      "cheese, for serving",
+      "green onions, for serving"
+    ],
+    "steps": [
+      "Sauté the onion in olive oil about 5 minutes.",
+      "Add the poblano, chicken, chili powder, paprika, and oregano; cook 5 minutes until fragrant.",
+      "Pour in the broth and salsa verde, season with salt and pepper, and simmer partially covered on medium-low about 15 minutes until the chicken is cooked.",
+      "Shred the chicken and return it to the pot with the black beans, lime juice, and cilantro; simmer 10 more minutes.",
+      "Stir in the cooked rice.",
+      "Serve topped with yogurt, cheese, avocado, cilantro, green onions, tortilla chips, and a little lime zest.",
+      "Slow-cooker option: combine everything except the rice, cook on low 6–7 hours or high 4–5 hours, then stir in the rice and add toppings."
+    ]
+  },
+  {
+    "id": "asian-style-meatballs",
+    "title": "Asian-style meatballs",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [],
+    "steps": [],
+    "note": "The source link is dead (404) and the original couldn't be confirmed among BroccYourBody's several meatball recipes, so ingredients and steps aren't recorded yet."
+  },
+  {
+    "id": "zucchini-beef-meatballs",
+    "title": "Zucchini beef meatballs",
+    "url": "https://www.besosalina.com/zucchini-meatballs-recipe-easy-weeknight-pasta-meatballs/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 lb ground beef",
+      "1 medium zucchini, grated",
+      "1 egg",
+      "2 garlic cloves, minced",
+      "1 yellow onion, diced",
+      "1/3 cup Italian breadcrumbs",
+      "1 tsp dried parsley",
+      "1 tsp dried oregano",
+      "1 tsp dried basil",
+      "1/3 cup grated parmesan cheese",
+      "1 tbsp olive oil",
+      "tomato sauce, for simmering",
+      "pasta, for serving"
+    ],
+    "steps": [
+      "Grate the zucchini, then squeeze out the excess water in a kitchen towel so the meatballs aren't watery.",
+      "Mix the beef, drained zucchini, egg, garlic, onion, seasonings, breadcrumbs, and parmesan by hand, then shape into golf-ball-size meatballs.",
+      "Sear in olive oil on all sides, 3–4 minutes, until browned and partly cooked.",
+      "Add tomato sauce to the pan and let the meatballs finish cooking in the sauce, 20–30 minutes.",
+      "Serve over pasta. (Alternatively, air-fry at 400°F for 15–20 minutes, or bake at 375°F for 25–30 minutes.)"
+    ]
+  },
+  {
+    "id": "pasta-bolognese",
+    "title": "Pasta Bolognese",
+    "url": "https://feelgoodfoodie.net/recipe/pasta-bolognese/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "3 stalks celery, small diced",
+      "2 carrots, peeled and small diced",
+      "2 garlic cloves, minced",
+      "1 lb lean ground beef",
+      "1 tsp salt",
+      "1/2 tsp black pepper",
+      "1 cup whole milk",
+      "1 can (28 oz) crushed tomatoes",
+      "2 tbsp tomato paste",
+      "1 bay leaf",
+      "2 tsp oregano",
+      "1/4 tsp nutmeg",
+      "16 oz tagliatelle pasta",
+      "chopped parsley, for serving"
+    ],
+    "steps": [
+      "Sauté the onion, celery, carrot, and garlic in olive oil until softened, about 10 minutes.",
+      "Add the ground beef with salt and pepper and brown it, breaking it apart, about 5 minutes.",
+      "Stir in the milk and let it mostly cook off, about 10 minutes, to help tenderize the meat.",
+      "Add the crushed tomatoes, tomato paste, bay leaf, oregano, and nutmeg.",
+      "Bring to a boil, then reduce heat and simmer uncovered 30–60 minutes, stirring occasionally, until thick.",
+      "Remove the bay leaf and toss with cooked pasta rather than spooning the sauce on top."
+    ]
+  },
+  {
+    "id": "baked-chicken-parmesan",
+    "title": "Baked chicken Parmesan",
+    "url": "https://www.skinnytaste.com/baked-chicken-parmesan/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "4 boneless skinless chicken breasts, sliced in half lengthwise",
+      "3/4 cup seasoned breadcrumbs",
+      "1/4 cup grated parmesan cheese",
+      "2 tbsp butter, melted",
+      "3/4 cup part-skim mozzarella cheese",
+      "1 cup marinara sauce",
+      "cooking spray",
+      "basil, for garnish"
+    ],
+    "steps": [
+      "Preheat the oven to 450°F and lightly spray a baking sheet.",
+      "Mix the breadcrumbs with the parmesan.",
+      "Brush the chicken with melted butter, then coat fully in the breadcrumb mixture and place on the sheet.",
+      "Spray the tops lightly and bake 25 minutes until golden.",
+      "Top each piece with about a tablespoon of marinara and a tablespoon and a half of mozzarella.",
+      "Bake 5 more minutes until the cheese melts and bubbles, then garnish with basil or parsley. About 40 minutes total."
+    ]
+  },
+  {
+    "id": "broccoli-cheddar-turkey-skillet",
+    "title": "Broccoli cheddar turkey skillet",
+    "url": "https://broccyourbody.com/broccoli-cheddar-turkey-skillet/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 tbsp olive oil",
+      "1 small yellow onion, diced",
+      "2 garlic cloves, minced",
+      "1 lb ground turkey, preferably 93% lean",
+      "1 tsp kosher salt",
+      "1 tsp paprika",
+      "1/4 tsp red chili flakes",
+      "1/4 tsp black pepper",
+      "1 1/2 cups frozen precooked brown rice",
+      "3 cups broccoli florets",
+      "1/2 cup chicken broth or water",
+      "1 cup shredded cheddar cheese",
+      "1/3 cup sour cream or Greek yogurt",
+      "chopped parsley, to top"
+    ],
+    "steps": [
+      "Sauté the onion and garlic in olive oil until soft, 5–7 minutes.",
+      "Turn the heat up, add the ground turkey, and brown it, breaking it apart, about 5 minutes.",
+      "Stir in the seasonings, precooked rice, broccoli, and broth; cover and simmer over medium-low until the broccoli is tender and the liquid is absorbed, 8–10 minutes.",
+      "Stir in half the cheddar and the sour cream or yogurt, adjusting seasoning to taste.",
+      "Top with the rest of the cheese, cover briefly to melt, and garnish with parsley. About 25 minutes total."
+    ]
+  },
+  {
+    "id": "thai-red-curry-noodle-soup",
+    "title": "Thai red curry noodle soup",
+    "url": "https://damndelicious.net/2018/04/18/thai-red-curry-noodle-soup/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 tbsp olive oil",
+      "1 1/2 lb boneless skinless chicken breasts, cut into 1/2-inch chunks",
+      "kosher salt and black pepper",
+      "3 cloves garlic, minced",
+      "1 red bell pepper, diced",
+      "1 onion, diced",
+      "3 tbsp red curry paste",
+      "1 tbsp fresh ginger, grated",
+      "6 cups low sodium chicken broth",
+      "1 can (13.5 oz) coconut milk",
+      "4 oz rice noodles",
+      "1 tbsp fish sauce",
+      "2 tsp brown sugar",
+      "3 green onions, thinly sliced",
+      "1/2 cup fresh cilantro leaves, chopped",
+      "1/4 cup fresh basil leaves, chopped",
+      "2 tbsp lime juice"
+    ],
+    "steps": [
+      "Sear the seasoned chicken in oil until golden, 2–3 minutes, then set aside.",
+      "Cook the garlic, bell pepper, and onion in the same pot until softened, 3–4 minutes.",
+      "Stir in the curry paste and ginger for about a minute, until fragrant.",
+      "Pour in the broth and coconut milk, scraping up any browned bits from the bottom.",
+      "Return the chicken to the pot and simmer about 10 minutes.",
+      "Add the rice noodles, fish sauce, and brown sugar; cook until the noodles are tender, about 5 minutes.",
+      "Off the heat, stir in the green onions, cilantro, basil, and lime juice, then serve right away."
+    ]
+  },
+  {
+    "id": "halibut-mango-salsa-coconut-rice",
+    "title": "Halibut with mango salsa and coconut rice",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "halibut fillets",
+      "avocado oil",
+      "paprika",
+      "garlic powder",
+      "mango",
+      "kiwi",
+      "onion",
+      "cilantro",
+      "red pepper",
+      "garlic cloves, chopped",
+      "1 lime",
+      "olive oil",
+      "salt",
+      "pepper",
+      "white rice",
+      "1-2 cups coconut milk"
+    ],
+    "steps": [
+      "Season the halibut with avocado oil, paprika, and garlic powder, then roast at 400°F for 15–20 minutes.",
+      "For the salsa, chop the mango, kiwi, onion, cilantro, red pepper, and garlic, and toss with lime juice, a little olive oil, salt, and pepper.",
+      "Cook the rice in 1–2 cups of coconut milk instead of water.",
+      "Serve the halibut over the coconut rice, topped with the mango salsa."
+    ],
+    "note": "From an Instagram story — a loose post with no exact quantities for the halibut or seasonings."
+  },
+  {
+    "id": "hot-and-sour-soup",
+    "title": "Hot and sour soup",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "8 cups chicken broth or vegetable broth",
+      "8 oz shiitake mushrooms, thinly sliced",
+      "1 can (8 oz) bamboo shoots",
+      "1/4 cup rice vinegar",
+      "1/4 cup low-sodium soy sauce",
+      "2 tsp ground ginger",
+      "1 tsp chili garlic sauce",
+      "1/4 cup cornstarch",
+      "2 large eggs",
+      "8 oz firm tofu, cut into 1/2-inch cubes",
+      "4 green onions, thinly sliced",
+      "1 tsp toasted sesame oil",
+      "kosher salt and white pepper"
+    ],
+    "steps": [
+      "Set aside 1/4 cup of the broth.",
+      "Combine the rest of the broth with the mushrooms, bamboo shoots, vinegar, soy sauce, ginger, and chili garlic sauce; bring to a simmer.",
+      "Whisk the reserved broth with the cornstarch until smooth, stir it into the soup, and cook about a minute until thickened.",
+      "While stirring in a circular motion, slowly drizzle in the beaten eggs to form ribbons.",
+      "Stir in the tofu, half the green onions, and the sesame oil, then season with salt and white or black pepper.",
+      "Adjust with more vinegar for tang or more chili garlic sauce for heat, and serve garnished with the remaining green onions."
+    ]
+  },
+  {
+    "id": "dump-and-bake-cheesy-beef-tortellini",
+    "title": "Dump-and-bake cheesy beef tortellini",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 package (20 oz) tortellini",
+      "1 lb ground beef, cooked and seasoned",
+      "1 jar (24 oz) marinara sauce",
+      "1 zucchini, chopped",
+      "1 to 1 1/2 cups shredded sharp cheddar cheese"
+    ],
+    "steps": [
+      "Preheat the oven to 375°F.",
+      "Combine the tortellini, cooked ground beef, marinara, and chopped zucchini in a 9x13 baking dish and stir together.",
+      "Top evenly with the shredded cheddar.",
+      "Cover tightly with foil and bake 35–40 minutes until heated through.",
+      "For a bubblier top, add the cheese after about 30 minutes instead and finish uncovered 5–10 minutes until bubbly.",
+      "Let it rest 5 minutes before serving; it firms up as it sits."
+    ]
+  },
+  {
+    "id": "one-pan-chicken-enchilada-skillet",
+    "title": "One-pan chicken enchilada skillet",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "2 tbsp avocado oil",
+      "1/2 cup red onion, diced",
+      "1 tsp garlic, minced",
+      "1 lb organic ground chicken or turkey",
+      "2 cups zucchini, chopped",
+      "1 large red bell pepper, diced",
+      "1 jar (15 oz) enchilada sauce",
+      "1/4 tsp ground cumin",
+      "1/4 tsp chili powder",
+      "1/4 tsp paprika",
+      "sea salt and black pepper",
+      "1/2 cup fresh cilantro leaves, chopped",
+      "1/2 cup shredded hard goat cheese",
+      "4 tortillas (6-inch), cut into strips",
+      "1/4 cup scallions, chopped",
+      "1 avocado, sliced",
+      "1 tsp red chili flakes"
+    ],
+    "steps": [
+      "Heat the oil in a large skillet and cook the onion and garlic about 3 minutes.",
+      "Add the ground chicken or turkey and cook 5 minutes, breaking it up, until browned.",
+      "Stir in the zucchini, bell pepper, half the enchilada sauce, the cumin, chili powder, paprika, salt, and pepper; cook a few minutes until the peppers soften slightly.",
+      "Stir in the remaining enchilada sauce plus 1/4 cup each of the cilantro and cheese, then add the tortilla strips and reduce heat to medium-low.",
+      "Cover and cook 10 minutes.",
+      "Add the rest of the cilantro and cheese, cover, and cook 1 more minute until melted.",
+      "Top with sliced avocado and red chili flakes before serving. Serves 4."
+    ]
+  },
+  {
+    "id": "greek-style-chicken-meatballs",
+    "title": "Greek-style chicken meatballs",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 lb ground chicken",
+      "1 egg",
+      "1/4 cup almond flour",
+      "1/4 cup feta",
+      "1 tbsp garlic powder",
+      "1 tbsp oregano",
+      "1 tbsp dried mint",
+      "1 tbsp fresh dill, chopped",
+      "2 tbsp fresh parsley, chopped",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 400°F.",
+      "Combine the ground chicken, egg, almond flour, feta, garlic powder, oregano, dried mint, dill, parsley, salt, and pepper (adjust the herbs and seasoning to taste).",
+      "Shape into meatballs and bake 25 minutes.",
+      "Serve with rice, tomato, cucumber, olives, feta, and tzatziki or hummus. Freezer- and fridge-friendly for meal prep."
+    ]
+  },
+  {
+    "id": "mediterranean-sheet-pan-chicken-feta",
+    "title": "Mediterranean sheet pan chicken and feta",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 cup pitted olives",
+      "1 can artichoke hearts",
+      "2 zucchini, chopped",
+      "3 chicken breasts",
+      "1 block feta, cubed",
+      "3/4 cup olive oil",
+      "juice of 1 lemon",
+      "1 tbsp oregano"
+    ],
+    "steps": [
+      "Preheat the oven to 425°F.",
+      "Arrange the olives, artichoke hearts, zucchini, chicken breasts, and cubed feta on a sheet pan.",
+      "Whisk the olive oil, lemon juice, and oregano together and drizzle it over everything so it's fully coated.",
+      "Bake 35 minutes."
+    ]
+  },
+  {
+    "id": "sheet-pan-sausage-and-veggies",
+    "title": "Sheet pan sausage and veggies",
+    "url": "https://www.chelseasmessyapron.com/one-pan-healthy-sausage-and-veggies/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "2 cups diced baby red potatoes",
+      "3 cups green beans, trimmed and halved",
+      "1 head broccoli",
+      "1 1/2 cups bell peppers, chopped",
+      "13 oz smoked sausage",
+      "6 tbsp olive oil",
+      "1/4 tsp red pepper flakes",
+      "1 tsp paprika",
+      "1/2 tsp garlic powder",
+      "1 tbsp dried oregano",
+      "1 tbsp dried parsley",
+      "salt and pepper",
+      "grated Parmesan cheese, for serving",
+      "cooked quinoa or rice, for serving"
+    ],
+    "steps": [
+      "Preheat the oven to 400°F and line a large sheet pan with parchment.",
+      "Dice the potatoes, halve the green beans, cut the broccoli into florets, chop the peppers, and slice the sausage.",
+      "Combine everything on the sheet pan, drizzle with olive oil, and add the seasonings.",
+      "Toss by hand to coat evenly and spread into a single layer without crowding.",
+      "Roast 15 minutes, then stir and flip everything and roast another 10–15 minutes until the vegetables are as tender as you like.",
+      "Finish with grated Parmesan and fresh parsley; serve as-is or over rice or quinoa."
+    ]
+  },
+  {
+    "id": "burger-bowls",
+    "title": "Burger bowls",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "ground beef",
+      "mushrooms",
+      "potatoes or sweet potatoes",
+      "tomatoes",
+      "lettuce",
+      "pickles",
+      "cheese"
+    ],
+    "steps": [
+      "Cook the ground beef.",
+      "Roast or pan-fry the potatoes and mushrooms.",
+      "Assemble everything over lettuce with tomatoes, pickles, and cheese."
+    ],
+    "note": "Your own bowl idea, not a captured recipe — this is a suggested approach."
+  },
+  {
+    "id": "greek-bowls",
+    "title": "Greek bowls",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "chicken meatballs",
+      "tomatoes",
+      "cucumber",
+      "lettuce",
+      "feta"
+    ],
+    "steps": [
+      "Make the chicken meatballs (see the Greek-style chicken meatballs recipe).",
+      "Build the bowl with tomatoes, cucumber, lettuce, and feta."
+    ],
+    "note": "Your own bowl idea, not a captured recipe — this is a suggested approach."
+  },
+  {
+    "id": "salmon-bowls",
+    "title": "Salmon bowls",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "salmon",
+      "rice",
+      "broccoli",
+      "carrots",
+      "soy sauce"
+    ],
+    "steps": [
+      "Cook the salmon, baked or pan-seared.",
+      "Steam the broccoli and carrots.",
+      "Serve over rice with soy sauce."
+    ],
+    "note": "Your own bowl idea, not a captured recipe — this is a suggested approach."
+  }
 ]

@@ -285,12 +285,16 @@ function openRecipe(id) {
   if (!r) return;
   const d = domain(r.url);
   const ings = (r.ingredients || []).map((l) => `<li>${esc(l)}</li>`).join("");
+  const steps = (r.steps || []).map((s) => `<li>${esc(s)}</li>`).join("");
   const inWeek = state.week.includes(r.id);
   byId("modal-body").innerHTML = `
     <h2>${esc(r.title)}</h2>
     ${r.url ? `<a class="src-link" href="${esc(r.url)}" target="_blank" rel="noopener">View full recipe on ${esc(d)} ↗</a>` : ""}
-    <div class="ing-head">Ingredients</div>
-    <ul>${ings}</ul>
+    ${r.note ? `<p class="recipe-note">${esc(r.note)}</p>` : ""}
+    ${ings ? `<div class="ing-head">Ingredients</div><ul>${ings}</ul>` : ""}
+    ${steps
+      ? `<div class="ing-head">How to make it</div><ol class="steps">${steps}</ol>`
+      : (ings ? "" : `<p class="recipe-note">No ingredients or steps recorded yet.</p>`)}
     <div class="modal-foot">
       <button class="btn btn-primary toggle-week ${inWeek ? "in-week" : ""}" data-toggle="${esc(r.id)}">
         ${inWeek ? "✓ In this week" : "+ Add to week"}
@@ -376,5 +380,9 @@ async function boot() {
   state.week = state.week.filter((id) => ids.has(id));
   save(KEYS.week, state.week);
   render();
+
+  // Shareable deep link: index.html?r=<recipe-id> opens that recipe on load.
+  const rid = new URLSearchParams(location.search).get("r");
+  if (rid) openRecipe(rid);
 }
 boot();

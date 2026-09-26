@@ -351,8 +351,21 @@ body {
 #modal-body .src-link { color: var(--carrot); font-weight: 600; text-decoration: none; font-size: 0.9rem; }
 #modal-body .src-link:hover { text-decoration: underline; }
 #modal-body .ing-head { margin: 18px 0 8px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
-#modal-body ul { margin: 0; padding-left: 18px; }
+#modal-body ul, #modal-body ol { margin: 0; padding-left: 20px; }
 #modal-body li { padding: 3px 0; }
+#modal-body ol.steps { padding-left: 22px; }
+#modal-body ol.steps li { padding: 5px 0 5px 4px; line-height: 1.5; }
+#modal-body ol.steps li::marker { color: var(--carrot); font-weight: 700; }
+.recipe-note {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  background: color-mix(in srgb, var(--egg) 16%, var(--card));
+  border: 1px solid color-mix(in srgb, var(--egg) 40%, var(--line));
+  border-radius: 10px;
+  corner-shape: superellipse(2);
+  font-size: 0.85rem;
+  color: var(--ink);
+}
 .modal-foot { margin-top: 20px; display: flex; gap: 10px; }
 
 /* ---- toast ---- */
