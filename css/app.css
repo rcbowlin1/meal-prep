@@ -48,7 +48,7 @@ body {
 .veg-carrot { top: 22%; right: -24px; width: 150px; height: 225px; transform: rotate(10deg); }
 .veg-broc { bottom: 6px; left: -42px; width: 270px; height: 290px; transform: rotate(-6deg); }
 .veg-straw { top: 34%; left: 4%; width: 230px; height: 195px; transform: rotate(-4deg); opacity: 0.36; }
-.veg-turkey { top: 56%; right: -8px; width: 240px; height: 180px; transform: rotate(-2deg); opacity: 0.34; }
+.veg-turkey { top: 57%; right: -8px; width: 240px; height: 170px; transform: rotate(-2deg); opacity: 0.34; }
 
 /* everything above the veg layer */
 .app-header, .tabs, #view, .toast { position: relative; z-index: 1; }
