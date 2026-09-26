@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Bowlin's Shopping List</title>
+  <meta name="description" content="Plan dinners, get a grocery list." />
+  <meta name="theme-color" content="#F5EFE1" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div class="veg-bg" aria-hidden="true">
+    <svg class="veg veg-carrot" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M35 45 L60 78 L70 62 Z"/><path d="M60 42 L70 30 M66 46 L80 40 M55 38 L58 24"/></g></svg>
+    <svg class="veg veg-broc" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="40" cy="38" r="12"/><circle cx="58" cy="34" r="11"/><circle cx="50" cy="52" r="12"/><path d="M50 60 L50 82"/></g></svg>
+    <svg class="veg veg-tom" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="50" cy="55" r="26"/><path d="M50 29 L50 20 M42 27 L36 21 M58 27 L64 21"/></g></svg>
+  </div>
+
+  <header class="app-header">
+    <h1>Bowlin's Shopping List</h1>
+    <p class="tagline">Plan dinners, get a grocery list.</p>
+  </header>
+
+  <nav class="tabs">
+    <a href="#recipes" class="tab" data-view="recipes">Recipes</a>
+    <a href="#week" class="tab" data-view="week">This Week <span class="badge" id="week-badge" hidden></span></a>
+    <a href="#grocery" class="tab" data-view="grocery">Grocery</a>
+  </nav>
+
+  <main id="view"></main>
+
+  <dialog id="recipe-modal" class="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    <div id="modal-body"></div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

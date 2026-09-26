@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Carrot">
+  <rect width="512" height="512" rx="112" fill="#F5EFE1"/>
+  <g transform="rotate(45 256 256)">
+    <!-- carrot body -->
+    <path d="M256 176 L318 380 Q256 420 194 380 Z" fill="#E0741F"/>
+    <!-- ridges -->
+    <g stroke="#c1631a" stroke-width="6" stroke-linecap="round" opacity="0.6">
+      <line x1="230" y1="250" x2="248" y2="258"/>
+      <line x1="282" y1="250" x2="264" y2="258"/>
+      <line x1="238" y1="310" x2="256" y2="318"/>
+      <line x1="274" y1="310" x2="256" y2="318"/>
+    </g>
+    <!-- leafy top -->
+    <g fill="#4F8F43">
+      <path d="M256 180 Q236 120 210 108 Q236 138 240 178 Z"/>
+      <path d="M256 180 Q256 108 256 96 Q272 132 268 178 Z"/>
+      <path d="M256 180 Q276 120 302 108 Q276 138 272 178 Z"/>
+    </g>
+  </g>
+</svg>

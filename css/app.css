@@ -1,0 +1,386 @@
+/* Bowlin's Shopping List — cream + carrot design system */
+
+:root {
+  --cream: #F5EFE1;
+  --card: #FFFDF7;
+  --ink: #33302A;
+  --muted: #8f8a7b;
+  --carrot: #E0741F;
+  --carrot-dark: #c1631a;
+  --broccoli: #4F8F43;
+  --strawberry: #D8473F;
+  --blueberry: #3E6CC4;
+  --egg: #E6B93E;
+  --pantry: #B27A3C;
+  --line: #e6dcc7;
+  --veg: #e4d8bf;
+
+  --radius: 16px;
+  --shadow: 0 1px 2px rgba(51, 48, 42, 0.06);
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.45;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* ---- faint oversized vegetable background ---- */
+.veg-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  color: var(--veg);
+}
+.veg { position: absolute; width: 320px; height: 320px; opacity: 0.55; }
+.veg-carrot { top: 8%; right: -60px; transform: rotate(12deg); }
+.veg-broc { bottom: -40px; left: -50px; width: 380px; height: 380px; transform: rotate(-8deg); }
+.veg-tom { top: 46%; right: 40%; width: 220px; height: 220px; opacity: 0.35; }
+
+/* everything above the veg layer */
+.app-header, .tabs, #view, .toast { position: relative; z-index: 1; }
+
+/* ---- header ---- */
+.app-header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px 12px;
+  text-align: center;
+}
+.app-header h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  letter-spacing: -0.01em;
+}
+.app-header .tagline {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+/* ---- tabs ---- */
+.tabs {
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 12px 16px;
+  background: color-mix(in srgb, var(--cream) 88%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.tab {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  corner-shape: superellipse(2);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.tab:hover { border-color: var(--carrot); }
+.tab.active {
+  background: var(--carrot);
+  border-color: var(--carrot);
+  color: #fff;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--broccoli);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.tab.active .badge { background: #fff; color: var(--carrot); }
+.badge[hidden] { display: none; }
+
+/* ---- view container ---- */
+#view {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 16px 0;
+}
+
+.view-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.view-head h2 { margin: 0; font-size: 1.25rem; }
+.view-head .count { color: var(--muted); font-size: 0.9rem; }
+
+/* ---- buttons ---- */
+.btn {
+  appearance: none;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 999px;
+  corner-shape: superellipse(2);
+  padding: 10px 18px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.05s, background 0.15s, border-color 0.15s;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--carrot); color: #fff; }
+.btn-primary:hover { background: var(--carrot-dark); }
+.btn-primary:disabled { background: var(--line); color: var(--muted); cursor: not-allowed; }
+.btn-ghost { background: transparent; border-color: var(--line); color: var(--ink); }
+.btn-ghost:hover { border-color: var(--ink); }
+.btn-danger { background: transparent; border-color: transparent; color: var(--strawberry); }
+.btn-danger:hover { text-decoration: underline; }
+.btn-sm { padding: 6px 12px; font-size: 0.85rem; }
+
+/* ---- recipe grid ---- */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.recipe-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  corner-shape: superellipse(2);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.08s;
+}
+.recipe-card:hover { border-color: var(--carrot); transform: translateY(-1px); }
+.recipe-card h3 {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.3;
+}
+.recipe-meta {
+  color: var(--muted);
+  font-size: 0.82rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.recipe-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
+.recipe-card .card-actions { margin-top: auto; }
+
+/* add-to-week toggle */
+.toggle-week {
+  width: 100%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.toggle-week.in-week {
+  background: var(--broccoli);
+  color: #fff;
+  border-color: var(--broccoli);
+}
+
+/* ---- this week ---- */
+.week-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.week-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  corner-shape: superellipse(2);
+  padding: 12px 14px;
+}
+.week-row .title { font-weight: 600; flex: 1; }
+.week-row .rm { color: var(--strawberry); }
+.week-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ---- grocery list ---- */
+.cat-group { margin-bottom: 22px; }
+.cat-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.cat-dot { width: 11px; height: 11px; border-radius: 50%; flex: none; }
+.dot-produce { background: var(--broccoli); }
+.dot-meat { background: var(--strawberry); }
+.dot-dairy { background: var(--egg); }
+.dot-pantry { background: var(--pantry); }
+.dot-other { background: var(--blueberry); }
+
+.cat-note { font-weight: 500; text-transform: none; letter-spacing: 0; color: var(--muted); font-size: 0.78rem; }
+
+.grocery-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 4px;
+  border-bottom: 1px solid var(--line);
+}
+.grocery-item:last-child { border-bottom: none; }
+.grocery-item input[type="checkbox"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--line);
+  border-radius: 7px;
+  corner-shape: superellipse(2);
+  cursor: pointer;
+  flex: none;
+  position: relative;
+  transition: background 0.12s, border-color 0.12s;
+}
+.grocery-item input[type="checkbox"]:checked {
+  background: var(--broccoli);
+  border-color: var(--broccoli);
+}
+.grocery-item input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px; top: 2px;
+  width: 5px; height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.grocery-item .label { flex: 1; }
+.grocery-item .src { color: var(--muted); font-size: 0.78rem; }
+.grocery-item.checked .label { text-decoration: line-through; color: var(--muted); }
+.grocery-item .del {
+  background: none; border: none; color: var(--muted); cursor: pointer;
+  font-size: 1.1rem; line-height: 1; padding: 4px 6px;
+}
+.grocery-item .del:hover { color: var(--strawberry); }
+
+.add-item-row {
+  display: flex;
+  gap: 8px;
+  margin: 6px 0 22px;
+}
+.add-item-row input[type="text"] {
+  flex: 1;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  corner-shape: superellipse(2);
+  background: var(--card);
+  color: var(--ink);
+}
+.add-item-row input[type="text"]:focus { outline: 2px solid var(--carrot); outline-offset: 1px; border-color: transparent; }
+
+.grocery-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 16px 0 8px;
+  border-top: 1px solid var(--line);
+}
+.grocery-actions .spacer { flex: 1; }
+
+/* ---- empty states ---- */
+.empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 48px 20px;
+}
+.empty .big { font-size: 1.05rem; color: var(--ink); margin-bottom: 6px; }
+
+/* ---- modal ---- */
+.modal {
+  border: none;
+  border-radius: 20px;
+  corner-shape: superellipse(2);
+  padding: 0;
+  max-width: 460px;
+  width: calc(100% - 32px);
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 20px 50px rgba(51, 48, 42, 0.25);
+}
+.modal::backdrop { background: rgba(51, 48, 42, 0.4); backdrop-filter: blur(2px); }
+.modal-close {
+  position: absolute;
+  top: 12px; right: 14px;
+  background: none; border: none;
+  font-size: 1.6rem; line-height: 1;
+  color: var(--muted); cursor: pointer;
+}
+#modal-body { padding: 24px; }
+#modal-body h2 { margin: 0 30px 4px 0; font-size: 1.3rem; }
+#modal-body .src-link { color: var(--carrot); font-weight: 600; text-decoration: none; font-size: 0.9rem; }
+#modal-body .src-link:hover { text-decoration: underline; }
+#modal-body .ing-head { margin: 18px 0 8px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+#modal-body ul { margin: 0; padding-left: 18px; }
+#modal-body li { padding: 3px 0; }
+.modal-foot { margin-top: 20px; display: flex; gap: 10px; }
+
+/* ---- toast ---- */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 999px;
+  corner-shape: superellipse(2);
+  font-weight: 600;
+  font-size: 0.9rem;
+  z-index: 50;
+  box-shadow: 0 6px 20px rgba(51, 48, 42, 0.3);
+  animation: toast-in 0.2s ease;
+}
+.toast[hidden] { display: none; }
+@keyframes toast-in { from { opacity: 0; transform: translate(-50%, 8px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+@media (max-width: 420px) {
+  .app-header { padding-top: 20px; }
+  .app-header h1 { font-size: 1.6rem; }
+  .recipe-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

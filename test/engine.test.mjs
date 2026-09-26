@@ -29,6 +29,10 @@ check('"juice of 1 lemon"', p("juice of 1 lemon"), { q: 1, u: null, item: "lemon
 check('"kosher salt and black pepper"', p("kosher salt and black pepper"), { q: null, u: null, item: "salt and pepper" });
 check('"3 stalks celery, small diced"', p("3 stalks celery, small diced"), { q: 3, u: "stalk", item: "celery" });
 check('"green onions, to top"', p("green onions, to top"), { q: null, u: null, item: "green onions" });
+check('"1/4 cup fresh parsley, chopped" keeps "fresh"', p("1/4 cup fresh parsley, chopped"), { q: 0.25, u: "cup", item: "fresh parsley" });
+check('"2 tsp dried oregano" keeps "dried"', p("2 tsp dried oregano"), { q: 2, u: "tsp", item: "dried oregano" });
+check('"1 tbsp fresh basil" keeps "fresh"', p("1 tbsp fresh basil"), { q: 1, u: "tbsp", item: "fresh basil" });
+check('"1 tsp fresh grated ginger" drops "fresh" (not an herb)', p("1 tsp fresh grated ginger"), { q: 1, u: "tsp", item: "ginger" });
 
 console.log("\n— CLASSIFY —");
 const c = (s) => classify(parseIngredient(s).item);
@@ -40,6 +44,12 @@ check('olive oil -> Pantry', c("2 tbsp olive oil"), "Pantry");
 check('tortillas -> Other', c("4 tortillas (6-inch), cut into strips"), "Other");
 check('tofu -> Other', c("8 oz firm tofu, cut into 1/2-inch cubes"), "Other");
 check('eggs -> Dairy & Eggs', c("2 large eggs"), "Dairy & Eggs");
+check('fresh parsley -> Produce', c("1/4 cup fresh parsley, chopped"), "Produce");
+check('dried parsley -> Pantry', c("1 tbsp dried parsley"), "Pantry");
+check('dried oregano -> Pantry', c("2 tsp dried oregano"), "Pantry");
+check('fresh oregano -> Produce', c("2 tbsp fresh oregano"), "Produce");
+check('bare thyme -> Pantry (dried by default)', c("1 tsp thyme"), "Pantry");
+check('bare parsley -> Produce (fresh by default)', c("2 tbsp parsley"), "Produce");
 
 console.log("\n— SAMPLE SHOPPING LIST (Pasta Bolognese + Zucchini beef meatballs + Salmon bowls) —");
 const picked = recipes.filter((r) => ["pasta-bolognese", "zucchini-beef-meatballs", "salmon-bowls"].includes(r.id));

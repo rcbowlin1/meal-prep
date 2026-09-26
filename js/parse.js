@@ -127,6 +127,12 @@ export function normalizeName(name) {
   return s.trim();
 }
 
+// Herbs whose fresh/dried form changes the aisle. Stored as normalized (singular) names.
+export const HERBS = new Set([
+  "parsley", "cilantro", "basil", "dill", "mint", "chive", "scallion", "green onion",
+  "oregano", "thyme", "rosemary", "sage", "bay leaf", "tarragon", "marjoram",
+]);
+
 export function parseIngredient(raw) {
   const original = (raw || "").trim();
   let working = original.toLowerCase();
@@ -135,6 +141,12 @@ export function parseIngredient(raw) {
   if (/^[\w\s]*salt and (black |white )?pepper/.test(working)) {
     return { quantity: null, unit: null, item: "salt and pepper", qualifier: null, raw: original };
   }
+
+  // Fresh vs. dried changes the aisle for herbs (fresh parsley = Produce, dried = spice
+  // rack). Capture the form up front, before cleanItemName strips it as a descriptor.
+  let herbForm = null;
+  if (/\bfresh\b/.test(working)) herbForm = "fresh";
+  else if (/\bdried\b/.test(working)) herbForm = "dried";
 
   // "juice of 1 lime" / "zest of 1 lemon" -> quantity + item (you buy the fruit).
   const jz = working.match(/^(?:juice|zest) of\s+(.*)$/);
@@ -154,6 +166,15 @@ export function parseIngredient(raw) {
   // Drop a leading "of" ("1 can of beans").
   working = working.replace(/^of\s+/, "");
 
-  const item = cleanItemName(working);
-  return { quantity, unit, item, qualifier: null, raw: original };
+  const bare = cleanItemName(working);
+
+  // Re-attach fresh/dried only for herbs, where it changes what you buy and where.
+  let item = bare;
+  let qualifier = null;
+  if (herbForm && HERBS.has(normalizeName(bare))) {
+    item = `${herbForm} ${bare}`;
+    qualifier = herbForm;
+  }
+
+  return { quantity, unit, item, qualifier, raw: original };
 }

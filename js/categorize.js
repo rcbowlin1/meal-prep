@@ -2,10 +2,27 @@
 // Categories: "Produce" | "Meat & Seafood" | "Dairy & Eggs" | "Pantry" | "Other".
 // Produce / Meat & Seafood / Dairy & Eggs are "Fresh" (included by default);
 // Pantry is flagged (needs confirmation); Other is included but low-confidence.
-import { normalizeName } from "./parse.js";
+import { normalizeName, HERBS } from "./parse.js";
 
 export const CATEGORIES = ["Produce", "Meat & Seafood", "Dairy & Eggs", "Pantry", "Other"];
 export const FRESH_CATEGORIES = new Set(["Produce", "Meat & Seafood", "Dairy & Eggs"]);
+
+// When an herb is written bare (no "fresh"/"dried"), which aisle does it default to?
+// Soft herbs are usually bought fresh; woody/seed herbs usually live on the spice rack.
+const DRIED_DEFAULT_HERBS = new Set(["oregano", "thyme", "rosemary", "sage", "bay leaf", "marjoram", "tarragon"]);
+
+// Herb aisle rule: "dried X" -> Pantry, "fresh X" -> Produce, bare herb -> its default.
+// Returns a category string, or null if the name isn't an herb.
+function herbCategory(name) {
+  const m = name.match(/^(fresh|dried)\s+(.+)$/);
+  if (m) {
+    if (!HERBS.has(normalizeName(m[2]))) return null;
+    return m[1] === "dried" ? "Pantry" : "Produce";
+  }
+  const bare = normalizeName(name);
+  if (!HERBS.has(bare)) return null;
+  return DRIED_DEFAULT_HERBS.has(bare) ? "Pantry" : "Produce";
+}
 
 // Seed keyword lists (starting point; expand freely). Order of checks matters — see classify().
 const MEAT = ["chicken", "beef", "pork", "turkey", "lamb", "veal", "sausage", "bacon", "ham", "steak", "shrimp", "prawn", "salmon", "cod", "tilapia", "halibut", "trout", "fish", "crab", "scallop", "mussel", "clam", "lobster", "chorizo", "prosciutto", "pancetta", "brisket", "rib", "drumstick", "thigh", "tenderloin", "meatball", "mince", "hot dog", "salami", "pepperoni"];
@@ -26,6 +43,10 @@ export function classify(itemName, overrides = {}) {
 
   const key = normalizeName(itemName);
   if (overrides && overrides[key]) return overrides[key];
+
+  // Herb fresh/dried rule wins over the keyword scan (dried thyme is a spice, not produce).
+  const herbCat = herbCategory(name);
+  if (herbCat) return herbCat;
 
   // Special rules first (they beat the generic keyword scan).
   // Ground/any meat -> Meat, even though "ground" reads like a dry good.
