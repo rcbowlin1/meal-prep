@@ -372,7 +372,7 @@ body {
 }
 .week-row .title { font-weight: 600; flex: 1; }
 .week-row .rm { color: var(--strawberry); }
-.week-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.week-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
 
 /* ---- grocery list ---- */
 .cat-group { margin-bottom: 22px; }
@@ -460,8 +460,10 @@ body {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  padding: 16px 0 8px;
-  border-top: 1px solid var(--line);
+  align-items: center;
+  padding: 0 0 14px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--line);
 }
 .grocery-actions .spacer { flex: 1; }
 

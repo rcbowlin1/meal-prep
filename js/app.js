@@ -123,11 +123,11 @@ function renderWeek() {
       <button class="btn btn-sm btn-danger rm" data-remove="${esc(r.id)}">Remove</button>
     </div>`).join("");
   return `<div class="view-head"><h2>This Week</h2><span class="count">${picked.length} picked</span></div>
-    <div class="week-list">${rows}</div>
     <div class="week-actions">
       <button class="btn btn-primary" id="generate">Generate grocery list</button>
       <button class="btn btn-ghost" id="clear-week">Clear week</button>
-    </div>`;
+    </div>
+    <div class="week-list">${rows}</div>`;
 }
 
 // ---- Grocery view ----
@@ -167,14 +167,14 @@ function renderGrocery() {
     </section>`;
   }
   return `<div class="view-head"><h2>Grocery</h2><span class="count">${done}/${total} checked</span></div>
-    ${body}
-    ${addItemRow()}
     <div class="grocery-actions">
       <button class="btn btn-primary" id="copy">Copy list</button>
       <span class="spacer"></span>
       <button class="btn btn-ghost btn-sm" id="clear-checked">Clear checked</button>
       <button class="btn btn-danger btn-sm" id="clear-all">Clear all</button>
-    </div>`;
+    </div>
+    ${body}
+    ${addItemRow()}`;
 }
 function addItemRow() {
   return `<form class="add-item-row" id="add-item">
