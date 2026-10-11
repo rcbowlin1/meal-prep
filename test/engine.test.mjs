@@ -64,7 +64,7 @@ for (const cat of Object.keys(byCategory)) {
 console.log("\n— PLAIN-TEXT EXPORT PREVIEW —\n");
 console.log(toPlainText(byCategory, { title: "Dinner list" }));
 
-console.log(`\n— all 22 recipes parse without crashing —`);
+console.log(`\n— all ${recipes.length} recipes parse without crashing —`);
 let lines = 0;
 for (const r of recipes) for (const l of r.ingredients) { parseIngredient(l); lines++; }
 console.log(`  parsed ${lines} ingredient lines across ${recipes.length} recipes`);

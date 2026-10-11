@@ -679,5 +679,107 @@
     "note": "Your own bowl idea, not a captured recipe — this is a suggested approach.",
     "meal": "dinner",
     "category": "Seafood"
+  },
+  {
+    "id": "instant-pot-green-enchilada-chicken",
+    "title": "Instant Pot green enchilada chicken",
+    "url": "https://rachaelsgoodeats.com/instant-pot-green-enchilada-chicken/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "boneless skinless chicken thighs",
+      "1 jar Siete green enchilada sauce",
+      "ground cumin",
+      "garlic powder",
+      "onion powder",
+      "fine sea salt",
+      "freshly ground black pepper",
+      "1 can white beans, drained and rinsed",
+      "juice of 1 lime",
+      "fresh cilantro",
+      "rice, for serving",
+      "avocado, for serving"
+    ],
+    "steps": [
+      "Add the chicken thighs to the Instant Pot, pour the green enchilada sauce over the top, and add the cumin, garlic powder, onion powder, salt, and pepper; toss so the chicken is coated.",
+      "Cook on high pressure until the chicken is cooked through and tender, then release the pressure.",
+      "Shred the chicken right in the pot with two forks so it soaks up more of the sauce.",
+      "Stir in the drained white beans, cover, and let sit a few minutes to warm through — no extra pressure cooking needed.",
+      "Stir in the lime juice and chopped cilantro, then taste and adjust the seasoning.",
+      "Serve as-is, over rice with sliced avocado and more cilantro, or spooned into tortillas. About 30 minutes total."
+    ],
+    "note": "The source post lists the ingredients without exact measurements for the chicken and seasonings, so amounts aren't recorded.",
+    "meal": "dinner",
+    "category": "Chicken"
+  },
+  {
+    "id": "crockpot-pot-roast",
+    "title": "Crockpot pot roast",
+    "url": "https://rachaelsgoodeats.com/crockpot-pot-roast/",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "2.5 lb grass-fed chuck roast",
+      "sea salt",
+      "black pepper",
+      "1/4 tsp thyme",
+      "1 tbsp avocado oil",
+      "1 1/2 cups bone broth",
+      "3 carrots, peeled and chopped",
+      "1 white onion, chopped",
+      "mashed potatoes, for serving"
+    ],
+    "steps": [
+      "Season the roast by pressing salt and pepper into both sides.",
+      "Add the avocado oil to the crockpot, followed by the chuck roast, onion, carrots, bone broth, and thyme.",
+      "Cover and cook 6 hours on high or 8 hours on low, until the roast falls apart. If it isn't tender, keep cooking in 30-minute intervals.",
+      "Flip once toward the end, then turn the heat to low to finish once it's falling apart.",
+      "Serve with mashed potatoes. Browning the roast first and adding potatoes or celery to the pot are optional."
+    ],
+    "meal": "dinner",
+    "category": "Beef & Pork"
+  },
+  {
+    "id": "chicken-enchilada-quinoa-bake",
+    "title": "Chicken enchilada quinoa bake",
+    "url": "",
+    "status": "active",
+    "pass_count": 0,
+    "keep_count": 0,
+    "ingredients": [
+      "1 lb chicken thighs, cut into bite-sized pieces",
+      "1 cup uncooked quinoa",
+      "1 cup chicken bone broth",
+      "1 jar (12 oz) red enchilada sauce",
+      "3/4 cup dairy-free sour cream",
+      "2 tbsp olive oil",
+      "1 small yellow onion, diced",
+      "1 red bell pepper, chopped",
+      "1 can black beans, drained and rinsed",
+      "1 cup corn, fresh or frozen",
+      "3 cloves garlic, minced",
+      "2 tbsp taco seasoning",
+      "1 1/4 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "fresh cilantro, chopped, for garnish",
+      "pickled red onions, for garnish",
+      "dairy-free sour cream, for garnish",
+      "avocado slices, for garnish",
+      "lime wedges, for garnish"
+    ],
+    "steps": [
+      "Preheat the oven to 400°F and lightly oil a 9x13-inch baking dish.",
+      "Add the quinoa, broth, enchilada sauce, sour cream, and olive oil to the dish and stir to combine.",
+      "Add the onion, bell pepper, black beans, corn, garlic, taco seasoning, salt, pepper, and chicken; stir until evenly incorporated.",
+      "Press into an even layer, making sure most of the quinoa is submerged in liquid so it cooks evenly.",
+      "Cover with a lid or foil and bake 45 minutes.",
+      "Uncover and bake another 10–15 minutes, until the quinoa is tender and the top is golden and bubbling.",
+      "For a more golden top, broil on high 2–3 minutes at the end.",
+      "Let rest 5–10 minutes, then serve with cilantro, pickled red onion, avocado slices, fresh lime juice, and more dairy-free sour cream."
+    ],
+    "meal": "dinner",
+    "category": "Chicken"
   }
 ]
