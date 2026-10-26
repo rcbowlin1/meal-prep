@@ -1,7 +1,7 @@
 {
   "name": "meal-prep",
   "version": "0.1.0",
-  "description": "Bowlin's Shopping List — a static meal-planning app: swipe recipes, get a categorized shopping list.",
+  "description": "Grocery Run — a static meal-planning app: swipe recipes, get a categorized shopping list.",
   "type": "module",
   "private": true,
   "scripts": {

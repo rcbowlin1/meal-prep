@@ -1,4 +1,4 @@
-// app.js — UI controller for Bowlin's Shopping List (static, no backend).
+// app.js — UI controller for Grocery Run (static, no backend).
 // State lives in localStorage; recipes come from data/recipes.json.
 import { parseIngredient, normalizeName } from "./parse.js";
 import { classify } from "./categorize.js";
